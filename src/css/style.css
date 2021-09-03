@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.user-container{
+    background: #a9bdce;
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.user-container label{
+    font-size: 14px;
+    margin-right: 1rem;
+}
+
+.user-container input{
+    border-radius: 3px;
+    border: none;
+    height: 100%;
+}
+
+.display-container{
+    flex: 12;
+    background: #b3c7d9;
+    overflow-y: scroll;
+}
+
+.input-container{
+    flex: 1;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.input-container span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.3rem;
+    width: 100%;
+}
+.chatting-input{
+    font-size: 12px;
+    height: 100%;
+    flex: 8;
+    border: none;
+
+}
+
+.send-button{
+    flex: 1;
+    background: #ffeb33;
+    border: none;
+    height: 100%;
+    border-radius: 3px;
+}
+.chatting-list li{
+    width: 90%;
+    padding: 0.3rem;
+    display: flex;
+    justify-items: flex-start;
+    align-items:flex-end;
+    margin-top: 0.5rem;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .user{
+    font-size: 10px;
+    margin-bottom: 0.3rem;
+}
+
+.profile .image{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.message{
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 12px;
+    margin:0 5px;
+}
+.time{
+    font-size: 10px;
+    margin: 0 5px;;
+}
+
+.sent {
+    flex-direction: row-reverse;
+    float: right;
+}
+
+.sent .message{
+    background: #ffeb33;
+}
+
+.received .message{
+    background: #fff;
+}
+
+.flex{
+    display: flex;
+}
+
+/**/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    background: rgb(0, 35, 103);
+    background: radial-gradient(circle, rgba(0, 35, 103, 1) 0%, rgba(2, 25, 79, 1) 48%, rgba(0, 8, 47, 1) 100%);
+    color: #fff;
+}
+
+#Start {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: salmon;
+    border: none;
+    cursor: pointer;
+
+}
+
+a {
+    color: #fff;
+}
+
+
+.game-text {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+}
+
+.game-text>button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: salmon;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.score {
+    font-size: 36px;
+}
+
+.level {
+    font-size: 36px;
+    text-align: center;
+}
+
+.playground>ul {
+    border: 1px solid #0e76cd;
+    border-bottom: 3px solid #0e76cd;
+    border-top: 3px solid #0e76cd;
+    border-bottom: 3px solid #0e76cd;
+    width: 250px;
+    margin: 0 auto;
+    padding: 12px;
+    padding-bottom: 48px;
+    background: #0747a1;
+}
+
+.playground>ul li {
+    width: 100%;
+    height: 25px;
+    background: black;
+
+}
+
+.playground>ul>li>ul {
+    display: flex;
+}
+
+.playground>ul>li>ul>li {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid #0e76cd;
+    ;
+
+}
+
+.playground>ul>li>ul>li.tree {
+    background: #60e75c;
+    box-shadow: inset 0 0 6px #0ab40d;
+    outline: 1px solid #0ab40d;
+}
+
+.playground>ul>li>ul>li.bar {
+    background: #f55e57;
+    box-shadow: inset 0 0 6px #a9100b;
+    outline: 1px solid #a9100b;
+}
+
+.playground>ul>li>ul>li.zee {
+    background: #615ef5;
+    box-shadow: inset 0 0 6px #1c00b5;
+    outline: 1px solid #1c00b5;
+
+}
+
+.playground>ul>li>ul>li.elLeft {
+    background: #f3c25b;
+    box-shadow: inset 0 0 6px #ba8500;
+    outline: 1px solid #ba8500;
+}
+
+.playground>ul>li>ul>li.elRight {
+    background: #f6ff61;
+    box-shadow: inset 0 0 6px #ba8500;
+    outline: 1px solid #b7ce01;
+}
+
+.playground>ul>li>ul>li.square {
+    background: #b763ef;
+    box-shadow: inset 0 0 6px #8408b8;
+    outline: 1px solid #8408b8;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 96px;
+    margin-top: 50px;
+}
+
+.score-box{
+    margin-top: auto;
+    background: #094d98;
+    width: 150px;
+    text-align: left;
+    padding: 10px;
+}
+
+.score-box div:first-child{
+    width: 100%;
+    border-bottom: 4px solid #2597ed;
+    margin-bottom: 3px;
+    padding-bottom: 8px;
+}
